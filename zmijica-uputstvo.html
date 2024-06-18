@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="zmijica-dodatno/jQuery.js"></script>
+    <script src="zmijica-uputstvo.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="zmijica">ZMIJICA</h1>
+    <h3 id="uputstvoLabel">Uputstvo:</h3><h3 id="tezinaLabel">Tezina:</h3>
+    <textarea id="uputstvoTextArea" disabled>Страница са игром приказује таблу поља по којој се креће змија и на којој се налазе комади хране. У сваком тренутку на табли се налази један комад хране. Када змија поједе храну, корисник остварује поен, а на насумичној локацији на табли се генерише нов комад хране. На сваких десет секунди, на табли се на насумичној локацији појављује „супер храна“ која остаје на табли неколико секунди пре него што нестане са табле. Уколико змија стигне да поједе „супер храну“, корисник остварује десет поена. Змијица се константно креће, корисник може да је усмерава притиском стрелица или тастера "а, њ, с, д", змијица мења смер уколико се усмери у претходни змијин сегмент. Игра траје док корисник не поједе сам свој реп, не удари главом у зид или док не победи.
+    </textarea><div id="divTezina">
+        <input id="teskoRadio" name="tezina" type="radio"> <h2 id="tesko">Tesko</h2>
+        <input id="srednjeRadio" checked name="tezina" type="radio"> <h2 id="srednje">Srednje</h2>
+        <input id="lakoRadio" name="tezina" type="radio"> <h2 id="lako">Lako</h2>
+    </div>
+    <input id="tablaSirina" type="number" min="2" max="500" value="17"> <h2 id="sirinaLabel">Sirina table</h2>
+    <input id="tablaVisina" type="number" min="2" max="50" value="15"> <h2 id="visinaLabel">Visina table</h2>
+    <button id="novaIgra">NOVA IGRA</button> <button id="rezultati">REZULTATI</button>
+    
+</body>
+</html>
